@@ -1,0 +1,29 @@
+/* src/styles/HowItWorks.css */
+
+.how-it-works {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+  
+  .how-it-works h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .how-it-works h2 span {
+    color: #007bff;
+  }
+  
+  .how-it-works p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .how-it-works h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  

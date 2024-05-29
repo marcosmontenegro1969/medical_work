@@ -1,0 +1,62 @@
+.search-form {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+    gap: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    /* max-width: 400px; Limitar a largura máxima */
+    margin-left: 3rem; /* Ajustar a margem para posicionar mais à esquerda */
+  }
+  
+  .search-form h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #007bff; /* Cor azul */
+    align-self: center; /* Centralizar o título */
+  }
+  
+  .search-form select,
+  .search-form input,
+  .search-form button {
+    padding: 0.8rem 2rem 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 95%;
+    margin: 0 auto; /* Centralize horizontally */
+  }
+  
+  .search-form select {
+    background-color: #fff;
+    -webkit-appearance: none; /* Remover a aparência padrão do select */
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../assets/images/dropdown-icon.png') no-repeat right 1rem center; /* Ícone de dropdown */
+    background-size: 1.5rem; /* Tamanho do ícone de dropdown */
+  }
+  
+  .search-form input {
+    padding-right: 2rem; /* Espaço para a lupa */
+    box-sizing: border-box;
+    background: url('../assets/images/search-icon.png') no-repeat right 1rem center; /* Ícone de lupa */
+    background-size: 2rem; /* Tamanho da lupa */
+  }
+  
+  .search-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+  }
+  
+  .search-form button:hover {
+    background-color: #0056b3;
+  }
+  

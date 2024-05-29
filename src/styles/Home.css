@@ -1,0 +1,102 @@
+.home {
+    text-align: center;
+    padding: 2rem 0; /* Ajustar o padding para melhor espaçamento */
+  }
+  
+  .hero-image {
+    background-image: url('../assets/images/medical-consultation-room.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0; /* Ajustar o padding para melhor espaçamento */
+    color: #fff;
+    position: relative; /* Adicionar posição relativa para posicionar os botões */
+    height: 80vh; /* Usar unidade relativa para a altura */
+  }
+
+  .search-form-container {
+    display: flex;
+    justify-content: flex-start; /* Alinhar à esquerda horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    height: 100%; /* Ajustar a altura para ocupar todo o contêiner da imagem */
+    padding-left: 2rem; /* Ajustar o padding à esquerda conforme necessário */
+  }
+  
+  .search-form {
+    display: inline-block;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-form input,
+  .search-form button {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .search-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .links {
+    position: absolute; /* Posicionar os botões sobre a imagem */
+    bottom: 1rem; /* Ajustar a posição dos botões */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 0.5rem;
+
+  }
+    
+  .links a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .links a:hover {
+    background-color: #0056b3;
+  }
+
+  .especialidades h2 {
+    font-size: 1.5rem; /* Usar tamanho de fonte relativo */
+    margin-bottom: 1rem;
+  }
+
+  .especialidades {
+    text-align: center;
+    margin: 2rem 0rem 1rem 0rem; /* Ajustar a margem para espaçamento */
+  }  
+  
+  .especialidades-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .especialidades-links button {
+    background: none;
+    border: none;
+    font-size: 1.7rem; /* Usar tamanho de fonte relativo */
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .especialidades-links button:hover {
+    color: #0056b3;
+  }
+  

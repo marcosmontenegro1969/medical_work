@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Adiciona padding ao topo do corpo para acomodar o header fixo */
+body {
+  padding-top: 80px; /* Ajuste conforme a altura do seu header */
 }

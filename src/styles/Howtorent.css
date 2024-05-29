@@ -1,0 +1,89 @@
+.how-to-rent {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 2rem; /* Adiciona espaço abaixo da seção */
+}
+
+.steps {
+  margin-bottom: 2rem; /* Adiciona espaço entre a linha do tempo e os benefícios */
+}
+
+.steps h2,
+.benefits h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.steps span,
+.benefits span {
+  color: #007bff;
+}
+
+.step-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.step-item {
+  flex: 1 1 20%;
+  max-width: 15%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.step-icon {
+  width: 100px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: 1.3rem;
+}
+
+.benefit-items {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-items li {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+.benefit-items .icon {
+  color: #007bff;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .step-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .step-item::after {
+    right: -1rem; /* Ajuste conforme necessário */
+  }
+}
+
+@media (max-width: 480px) {
+  .step-item {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  .step-item::after {
+    display: none;
+  }
+
+  .step-items::before {
+    display: none;
+  }
+}
