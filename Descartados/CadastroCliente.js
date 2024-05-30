@@ -1,11 +1,11 @@
 // Importamos os módulos necessários do React e a instância do axios configurada.
 import React, { useState } from 'react';
-import api from '../services/api';
+import api from './api';
 
-// Definimos o componente funcional Login.
-function Login() {
-  // Usamos o useState para criar um estado local para armazenar os dados do formulário de login.
-  const [formData, setFormData] = useState({ email: '', password: '' });
+// Definimos o componente funcional CadastroCliente.
+function CadastroCliente() {
+  // Usamos o useState para criar um estado local para armazenar os dados do formulário.
+  const [formData, setFormData] = useState({ name: '', email: '', password: '' });
 
   // Função para atualizar o estado local quando o usuário digita nos campos do formulário.
   const handleChange = (e) => {
@@ -17,29 +17,28 @@ function Login() {
     // Prevenimos o comportamento padrão do formulário, que é recarregar a página.
     e.preventDefault();
     try {
-      // Fazemos uma requisição POST para a rota '/login' com os dados do formulário.
-      const response = await api.post('/login', formData);
-      // Se a resposta do servidor indicar sucesso, armazenamos o token JWT e o id do cliente.
-      if (response.status === 200) {
-        localStorage.setItem('token', response.data.token);
-        localStorage.setItem('clientId', response.data.id);
-        alert('Login realizado com sucesso!');
+      // Fazemos uma requisição POST para a rota '/clientes' com os dados do formulário.
+      const response = await api.post('/clientes', formData);
+      // Se a resposta do servidor indicar sucesso, mostramos uma mensagem de sucesso.
+      if (response.status === 201) {
+        alert('Cliente cadastrado com sucesso!');
       }
     } catch (error) {
       // Se ocorrer um erro, mostramos uma mensagem de erro.
-      alert('Erro ao fazer login.');
+      alert('Erro ao cadastrar cliente.');
     }
   };
 
-  // Renderizamos o formulário de login.
+  // Renderizamos o formulário.
   return (
     <form onSubmit={handleSubmit}>
+      <input name="name" value={formData.name} onChange={handleChange} placeholder="Nome" required />
       <input name="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
       <input name="password" value={formData.password} onChange={handleChange} placeholder="Senha" type="password" required />
-      <button type="submit">Login</button>
+      <button type="submit">Cadastrar</button>
     </form>
   );
 }
 
 // Exportamos o componente para que ele possa ser usado em outros arquivos.
-export default Login;
+export default CadastroCliente;
