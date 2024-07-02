@@ -1,3 +1,5 @@
+// src/index.js
+import 'bootstrap/dist/css/bootstrap.min.css'; // Adicionando a importação do Bootstrap CSS
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

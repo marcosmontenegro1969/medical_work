@@ -6,6 +6,8 @@ const salas = [
         periodo: 'período 4h',
         descricao: 'Consultório Região Diferenciada em Santana - ZN',
         localizacao: 'Santana, São Paulo/SP',
+        latitude: -23.5020,
+        longitude: -46.6243,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -26,6 +28,8 @@ const salas = [
         periodo: 'hora',
         descricao: 'Consultório Odontológico - Av. Paulista (Sala 4)',
         localizacao: 'Bela Vista, São Paulo/SP',
+        latitude: -23.5564,
+        longitude: -46.6581,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -46,6 +50,8 @@ const salas = [
         periodo: 'período 4h',
         descricao: 'Consultório Médico ao Lado do Metrô Conceição!',
         localizacao: 'Vila Guarani (Z Sul), São Paulo/SP',
+        latitude: -23.6368,
+        longitude: -46.6403,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -66,6 +72,8 @@ const salas = [
         periodo: 'período 2h',
         descricao: 'Consultório de Psicologia - Jardins',
         localizacao: 'Jardins, São Paulo/SP',
+        latitude: -23.5664,
+        longitude: -46.6514,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -86,6 +94,8 @@ const salas = [
         periodo: 'hora',
         descricao: 'Consultório de Fisioterapia - Vila Mariana',
         localizacao: 'Vila Mariana, São Paulo/SP',
+        latitude: -23.5898,
+        longitude: -46.6347,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -106,6 +116,8 @@ const salas = [
         periodo: 'período 3h',
         descricao: 'Consultório de Fonoaudiologia - Moema',
         localizacao: 'Moema, São Paulo/SP',
+        latitude: -23.6016,
+        longitude: -46.6639,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -126,6 +138,8 @@ const salas = [
         periodo: 'período 2h',
         descricao: 'Consultório de Nutrição - Pinheiros',
         localizacao: 'Pinheiros, São Paulo/SP',
+        latitude: -23.5617,
+        longitude: -46.7010,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -146,6 +160,8 @@ const salas = [
         periodo: 'período 3h',
         descricao: 'Consultório Odontológico - Tatuapé',
         localizacao: 'Tatuapé, São Paulo/SP',
+        latitude: -23.5405,
+        longitude: -46.5765,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -166,6 +182,8 @@ const salas = [
         periodo: 'período 4h',
         descricao: 'Consultório Médico - Morumbi',
         localizacao: 'Morumbi, São Paulo/SP',
+        latitude: -23.6013,
+        longitude: -46.7156,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -186,6 +204,8 @@ const salas = [
         periodo: 'período 2h',
         descricao: 'Consultório de Psicologia - Higienópolis',
         localizacao: 'Higienópolis, São Paulo/SP',
+        latitude: -23.5489,
+        longitude: -46.6605,
         imagens: [
             '01.jpg',
             '02.jpg',
@@ -202,4 +222,3 @@ const salas = [
 ];
 
 export default salas;
-  

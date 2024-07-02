@@ -1,0 +1,83 @@
+/* src/styles/LoginSocial.css */
+
+/* Define a largura máxima e padrão do modal */
+.modal-dialog {
+    max-width: 400px; /* Largura máxima do modal */
+    width: 90%; /* Largura padrão do modal, ajustável conforme necessário */
+  }
+  
+  .modal-header {
+    border-bottom: none; /* Remove a borda inferior do cabeçalho */
+  }
+  
+  .modal-title {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    font-weight: bold; /* Peso da fonte do título */
+  }
+  
+  .modal-body h2 {
+    text-align: center; /* Alinha o texto ao centro */
+    color: #007bff; /* Cor do texto */
+    margin-bottom: 1.5rem; /* Margem inferior */
+  }
+  
+  .modal-body .btn {
+    display: flex; /* Utiliza o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    border: 1px solid black; /* Define a borda preta para os botões */
+  }
+  
+  .modal-body .btn svg {
+    margin-right: 0.5rem; /* Margem à direita dos ícones */
+  }
+  
+  .modal-body .grupo_Inputs input {
+    border: 1px solid black; /* Define a borda preta para o input */
+  }
+  
+  .modal-body .social-icon {
+    font-size: 1.5rem; /* Ajusta o tamanho dos ícones sociais */
+  }
+  
+  .modal-body .facebook {
+    color: #4267B2; /* Cor oficial do Facebook */
+  }
+  
+  .modal-body .linkedin {
+    color: #0077B5; /* Cor oficial do LinkedIn */
+  }
+  
+  /* Ajustes responsivos */
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 450px; /* Ajusta a largura máxima para telas pequenas */
+      width: 75%; /* Ajusta a largura padrão para telas pequenas */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .modal-dialog {
+      max-width: 500px; /* Define a largura máxima para telas médias */
+      width: 70%; /* Ajusta a largura padrão para telas médias */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .modal-dialog {
+      max-width: 550px; /* Define a largura máxima para telas grandes */
+      width: 60%; /* Ajusta a largura padrão para telas grandes */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .modal-dialog {
+      max-width: 350px; /* Define a largura máxima para telas extra grandes */
+      width: 100%; /* Ajusta a largura padrão para telas extra grandes */
+    }
+  }
+  
+  /* Define o estilo do label para que o background seja igual ao do modal */
+  .login-social-modal .grupo_Inputs .label_Contorno {
+    background-color: #fff; /* Define a cor de fundo do label como branca */
+  }

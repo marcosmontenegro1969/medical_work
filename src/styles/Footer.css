@@ -75,3 +75,13 @@
 .social-icons a:hover {
   color: #0056b3;
 }
+
+/* src/styles/Footer.css */
+.footer a {
+  color: #007bff; /* Cor do link */
+  text-decoration: none; /* Remover sublinhado */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+}

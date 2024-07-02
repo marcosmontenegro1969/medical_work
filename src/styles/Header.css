@@ -1,3 +1,4 @@
+/* src/styles/Header.css */
 .header {
   display: flex;
   justify-content: center; /* Centralizar o conteúdo do header */
@@ -57,4 +58,71 @@
 .login button::before {
   content: url('../assets/images/menu-icon.png'); /* Ícone de lista */
   margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
+}
+
+/* Estilos para o formulário de login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra ao formulário */
+  position: absolute; /* Tornar o formulário absoluto para aparecer sobre outros elementos */
+  top: 100px; /* Ajustar a posição vertical do formulário */
+  left: 50%;
+  transform: translateX(-50%); /* Centralizar horizontalmente */
+  z-index: 1100; /* Garantir que o formulário fique acima do header */
+}
+
+.login-form button[type="submit"] {
+  padding: 0.8rem;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Ajustar o tamanho da fonte */
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #002f29;
+}
+
+.grupo_Inputs {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.grupo_Inputs input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.grupo_Inputs label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 0.9rem;
+  color: #999;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.grupo_Inputs input:focus + label,
+.grupo_Inputs input:not(:placeholder-shown) + label {
+  top: -0.8rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+  color: #004d40;
+  background-color: white;
+  padding: 0 0.2rem;
 }

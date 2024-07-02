@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Footer.css';
 import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({ handleLoginClick, handleAnunciarClick }) => {
   return (
     <footer className="footer">
       <div className="column">
@@ -19,8 +19,8 @@ const Footer = () => {
         <h4>Nossa Rede</h4>
         <ul>
           <li><a href="#rent">Quero Alugar</a></li>
-          <li><a href="#advertise">Quero Anunciar</a></li>
-          <li><a href="#register">Cadastre-se</a></li>
+          <li><a href="#!" onClick={handleAnunciarClick}>Quero Anunciar</a></li> {/* href="#!" para manter um valor válido */}
+          <li><a href="#register" onClick={handleLoginClick}>Cadastre-se</a></li>
         </ul>
       </div>
       <div className="column">

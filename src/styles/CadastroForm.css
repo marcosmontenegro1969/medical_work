@@ -1,0 +1,109 @@
+/* src/styles/CadastroForm.css */transform
+
+.cadastro-form h2 {
+    font-size: 1.5rem; /* Ajustar o tamanho da fonte */
+    margin-bottom: 0.1rem; /* Espaço abaixo do título */
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 80%; /* Usar percentual para largura */
+    max-width: 700px; /* Ajustar a largura máxima para 3 colunas */
+    margin: 1rem auto;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adicionar sombra ao formulário */
+    position: absolute; /* Tornar o formulário absoluto para aparecer sobre outros elementos */
+    top: 10%; /* Ajustar a posição vertical do formulário */
+    left: 50%;
+    transform: translate(-50%, -8%); /* Centralizar horizontalmente e ajustar verticalmente */
+    z-index: 1101; /* Garantir que o formulário fique acima do overlay */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    z-index: 1100; /* Garantir que o overlay fique abaixo do formulário */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Definir três colunas de igual largura */
+    gap: 0.9rem; /* Espaçamento entre os itens */
+}
+
+.form-grid .grupo_Inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo_Inputs.large {
+    grid-column: span 3; /* Ocupa as três colunas */
+}
+
+.grupo_Inputs select {
+    padding: 0.45rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro-form button[type="submit"],
+.cadastro-form button[type="button"] {
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Ajustar o tamanho da fonte */
+    width: 48%; /* Fazer com que os botões ocupem a mesma largura */
+    text-align: center; /* Centralizar o texto dos botões */
+}
+
+.cadastro-form button[type="submit"]:hover,
+.cadastro-form button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+
+.custom-modal .modal-dialog {
+    z-index: 1201; /* Valor de z-index maior que o formulário */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cadastro-form button[type="submit"],
+    .cadastro-form button[type="button"] {
+        width: 100%; /* Botões ocupam a largura total em telas menores */
+    }
+}

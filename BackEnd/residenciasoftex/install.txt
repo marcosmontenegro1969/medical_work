@@ -1,0 +1,32 @@
+npm install express mysql body-parser crypto dotenv bcrypt jsonwebtoken @types/express @types/mysql @types/body-parser @types/bcrypt @types/jsonwebtoken
+
+npm install --save-dev nodemon
+
+
+
+
+instalar dependencias
+npm install
+
+
+npm install -g nodemon
+nodemon dist/index.js
+
+
+compilar ts em js
+tsc 
+
+rodar servidor
+nodemon dist/index.js
+
+
+
+automatizar compilacao e update no servidor
+npm install --save-dev nodemon typescript
+
+
+
+
+    /*"dev": "nodemon src/index.js"*/
+
+

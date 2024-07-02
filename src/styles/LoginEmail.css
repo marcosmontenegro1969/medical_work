@@ -1,0 +1,62 @@
+/* src/styles/LoginEmail.css */
+
+.login-email-modal .modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centralizar verticalmente */
+  height: 100vh; /* Usar 100vh para garantir que ocupa toda a altura da tela */
+}
+
+.modal-content {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 400px; /* Reduzir a largura total do modal */
+  margin-top: 10rem;
+}
+
+.modal-body h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.inputs-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Adicionar espaçamento entre os inputs */
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-bottom: 1.5rem; /* Espaço entre o link e os botões */
+  font-size: 0.9rem;
+  color: #007bff;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Colocar os botões lado a lado */
+}
+
+.btn-entrar,
+.btn-voltar {
+  width: 48%; /* Fazer com que os botões ocupem a mesma largura */
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

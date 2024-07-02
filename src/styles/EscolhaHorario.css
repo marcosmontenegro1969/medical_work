@@ -1,0 +1,64 @@
+/* src/styles/EscolhaHorario.css */
+
+.modal-title-custom {
+  margin: 0.3125rem 0; /* 5px */
+  padding: 0 0.625rem; /* 10px */
+  text-align: center;
+  font-size: 1.2em; /* Tamanho relativo da fonte */
+}
+
+.modal-subtitle {
+  margin-top: -0.3125rem; /* -5px */
+  padding: 0 0.625rem; /* 10px */
+  text-align: center;
+  font-size: 1rem; /* Tamanho relativo da fonte */
+}
+
+.modal-header {
+  padding-top: 0rem; /* 5px */
+  padding-bottom: 0rem; /* 5px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.horarios-secao {
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.horarios-secao h5 {
+  margin-bottom: 0.625rem; /* 10px */
+  text-align: center;
+}
+
+.horarios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* 8px */
+  justify-content: center;
+}
+
+.horario-button {
+  flex: 1 0 45%;
+  text-align: center;
+  margin: 0.3125rem; /* 5px */
+  white-space: nowrap; /* Garantir que o texto fique em uma linha */
+}
+
+.escolha-horario-modal .modal-dialog {
+  max-width: 90vw; /* 90% of viewport width */
+  width: 100%;
+}
+
+.modal-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full screen height */
+}
+
+.modal-content {
+  margin: auto;
+}
+

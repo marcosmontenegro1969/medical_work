@@ -1,0 +1,173 @@
+.detalhes-sala {
+  padding: 1.25rem;
+}
+
+.carrossel {
+  margin: 0 5.25rem 1rem 5.25rem;
+}
+
+.detalhes-sala img {
+  max-height: 22rem;
+  width: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.informacoes-principais,
+.descricao,
+.regras,
+.comodidades,
+.equipamentos,
+.seguranca,
+.oferta-especial,
+.reserva,
+.localizacao,
+.pontuacao,
+.proprietario {
+  margin: 1rem 5.25rem 0.5rem 5.25rem;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.proprietario {
+  border-bottom: none;
+}
+
+h4 {
+  color: #007bff;
+}
+
+h5 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.pontuacao {
+  margin: 0 5.25rem 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.pontuacao-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ff6f61;
+}
+
+.pontuacao-header .estrela {
+  margin-right: 0.5rem;
+}
+
+.pontuacao-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pontuacao-item {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin-bottom: 0.5rem;
+}
+
+.pontuacao-item span:last-child {
+  margin-left: auto;
+}
+
+.reserva .react-calendar {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.reserva .react-calendar__tile--indisponivel {
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.reserva .react-calendar__tile--indisponivel abbr {
+  color: red;
+  position: relative;
+  top: -5px; /* Ajuste esta posição conforme necessário */
+}
+
+.reserva .react-calendar__tile--indisponivel::after {
+  content: 'Indisponível';
+  color: red;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 1px; /* Ajuste esta posição conforme necessário */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.reserva .react-calendar__tile {
+  border: 1px solid #ddd;
+}
+
+.reserva .react-calendar__month-view__days__day--weekend {
+  color: black;
+}
+
+.reserva .react-calendar__month-view__days__day--sunday {
+  color: red;
+}
+
+.localizacao {
+  margin: 0 5.25rem 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.localizacao h5 {
+  margin-bottom: 1rem;
+}
+
+#map {
+  width: 100%;
+  height: 20rem;
+}
+
+.footer-fixo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-fixo .botoes {
+  display: inline-flex;
+}
+
+.footer-fixo .botoes button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 0.625rem;
+}
+
+.footer-fixo .preco-periodo {
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+}
+

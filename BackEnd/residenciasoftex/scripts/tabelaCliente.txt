@@ -1,0 +1,20 @@
+CREATE TABLE clientes (
+    id VARCHAR(20) PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    especialidade VARCHAR(255) NOT NULL,
+    rua_avenida VARCHAR(255) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    complemento VARCHAR(255),
+    bairro VARCHAR(255) NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado VARCHAR(255) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    pais VARCHAR(255) NOT NULL,
+    cpf VARCHAR(14),
+    cnpj VARCHAR(18),
+    crm VARCHAR(20) NOT NULL,
+    isAdmin BOOLEAN DEFAULT FALSE
+);
