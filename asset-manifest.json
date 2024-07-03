@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/medical_work/static/css/main.3f72693d.css",
-    "main.js": "/medical_work/static/js/main.ca70c463.js",
+    "main.css": "/medical_work/static/css/main.6c83458b.css",
+    "main.js": "/medical_work/static/js/main.f4041c1b.js",
     "static/js/453.721e549f.chunk.js": "/medical_work/static/js/453.721e549f.chunk.js",
     "static/media/01.jpg": "/medical_work/static/media/01.afa251ac02aa58a3d4f2.jpg",
     "static/media/09.jpg": "/medical_work/static/media/09.efb5e10af4821c66b59b.jpg",
@@ -21,12 +21,12 @@
     "static/media/medical-consultation-room.png": "/medical_work/static/media/medical-consultation-room.6d88794f6863c279928d.png",
     "static/media/search-icon.png": "/medical_work/static/media/search-icon.7c1d5c0278e82dfc6ea9.png",
     "index.html": "/medical_work/index.html",
-    "main.3f72693d.css.map": "/medical_work/static/css/main.3f72693d.css.map",
-    "main.ca70c463.js.map": "/medical_work/static/js/main.ca70c463.js.map",
+    "main.6c83458b.css.map": "/medical_work/static/css/main.6c83458b.css.map",
+    "main.f4041c1b.js.map": "/medical_work/static/js/main.f4041c1b.js.map",
     "453.721e549f.chunk.js.map": "/medical_work/static/js/453.721e549f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f72693d.css",
-    "static/js/main.ca70c463.js"
+    "static/css/main.6c83458b.css",
+    "static/js/main.f4041c1b.js"
   ]
 }
