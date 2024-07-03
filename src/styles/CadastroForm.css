@@ -1,15 +1,15 @@
-/* src/styles/CadastroForm.css */transform
+/* src/styles/CadastroForm.css */
 
 .cadastro-form h2 {
     font-size: 1.5rem; /* Ajustar o tamanho da fonte */
-    margin-bottom: 0.1rem; /* Espaço abaixo do título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
 }
 
 .cadastro-form {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
+    gap: 0.5rem; /* Reduzir o espaçamento entre os itens do formulário */
+    padding: 1.5rem;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -37,24 +37,28 @@
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Definir três colunas de igual largura */
-    gap: 0.9rem; /* Espaçamento entre os itens */
+    gap: 0.5rem; /* Reduzir o espaçamento entre os itens */
 }
 
 .form-grid .grupo_Inputs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0.5rem;
 }
 
 .grupo_Inputs.large {
     grid-column: span 3; /* Ocupa as três colunas */
 }
 
+/* Adicionar estilo para inputs em geral */
+.grupo_Inputs input,
 .grupo_Inputs select {
-    padding: 0.45rem;
+    padding: 0.9rem; /* Reduzir o padding dos inputs */
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Ajustar o tamanho da fonte */
+    max-width: 100%; /* Ajustar largura máxima para evitar que inputs fiquem muito largos */
 }
 
 .form-buttons {
@@ -64,13 +68,13 @@
 
 .cadastro-form button[type="submit"],
 .cadastro-form button[type="button"] {
-    padding: 0.8rem;
+    padding: 1rem; /* Reduzir o padding dos botões */
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2rem; /* Ajustar o tamanho da fonte */
+    font-size: 1rem; /* Ajustar o tamanho da fonte */
     width: 48%; /* Fazer com que os botões ocupem a mesma largura */
     text-align: center; /* Centralizar o texto dos botões */
 }
@@ -79,7 +83,6 @@
 .cadastro-form button[type="button"]:hover {
     background-color: #0056b3;
 }
-
 
 .custom-modal .modal-dialog {
     z-index: 1201; /* Valor de z-index maior que o formulário */
